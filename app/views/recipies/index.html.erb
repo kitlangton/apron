@@ -1,0 +1,8 @@
+<h1>Recipies#index</h1>
+<p>Find me in app/views/recipies/index.html.erb</p>
+<%= link_to "New Recipy", new_recipy_path %>
+<% @recipies.each do |recipie| %>
+  <%= link_to recipy_path(recipie) do %>
+    <h2> <%= recipie.super_name %> </h2>
+  <% end %>
+<%end%>
